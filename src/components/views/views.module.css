@@ -1,0 +1,25 @@
+.pageWrapper {
+  text-align: center;
+}
+
+.goWrapper {
+  float: left;
+  margin-left: 110px;
+ padding-top: 5px;
+  width: 25%;
+}
+
+.goText {
+  border-bottom: 1px solid slateblue;
+}
+
+.completedWrapper {
+  float: right;
+  margin-right: 110px;
+  padding-top: 5px;
+  width: 25%;
+}
+
+.completedText {
+  border-bottom: 1px solid slateblue;
+}
