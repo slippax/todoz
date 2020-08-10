@@ -18,5 +18,6 @@
 }
 
 .list li:hover {
-    color: red;
+    color: green;
+    text-decoration: line-through;
 }

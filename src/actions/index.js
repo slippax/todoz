@@ -32,3 +32,10 @@ export const deleteTodo = (name) => {
     payload: name,
   };
 };
+
+export const completedTodo = (id) => {
+  return {
+    type: "COMPLETED_TODO",
+    id
+  };
+};

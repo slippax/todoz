@@ -1,6 +1,7 @@
 import React from "react";
 import TodoItem from "../items/TodoItem";
 import TodoItemList from "../items/TodoItemList";
+import TodoItemListCompleted from '../items/TodoItemListCompleted';
 import TitleMenu from "./TitleMenu/TitleMenu";
 import classes from "./views.module.css";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
@@ -26,6 +27,7 @@ const views = () => {
           </div>
           <div className={classes.completedWrapper}>
           <h3 className={classes.completedText}>COMPLETED</h3>
+          <TodoItemListCompleted/>
           </div>
         </Bounce>
       </div>
