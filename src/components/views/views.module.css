@@ -23,3 +23,18 @@
 .completedText {
   border-bottom: 1px solid slateblue;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .goWrapper {
+    margin-left: 25px;
+   padding-top: 15px;
+    width: 30%;
+  }
+  .completedWrapper {
+    margin-right:25px;
+    padding-top: 15px;
+    width: 30%;
+  }
+  
+}
