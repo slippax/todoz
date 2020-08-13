@@ -16,7 +16,7 @@
     border-bottom: 1px solid salmon;
     border-width: 2px;
     padding-bottom: 5px;
-    font-size: 17px;
+    font-size: 18px;
   }
   
   .list li:hover {
@@ -25,7 +25,7 @@
   }
 
   .itemBox {
-    border: 1px solid green;
+    border: 1px solid darkolivegreen;
       border-width: 2px;
       padding: 6px;
       border-radius: 20px;
@@ -37,6 +37,18 @@
   padding-top: 10px;
   }
   
+  .button1 {
+    padding-top: 10px;
+    padding-right: 15px;
+  border: none;
+  background: none;
+  
+  }
+  
+  .button1:hover {
+    color: green;
+  }
+
   .button2:hover {
     color: red
   }

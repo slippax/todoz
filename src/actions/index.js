@@ -33,9 +33,16 @@ export const deleteTodo = (name) => {
   };
 };
 
-export const completedTodo = (id) => {
+export const completeTodo = (id) => {
   return {
-    type: "COMPLETED_TODO",
+    type: "COMPLETE_TODO",
+    id
+  };
+};
+
+export const revertTodo = (id) => {
+  return {
+    type: "REVERT_TODO",
     id
   };
 };

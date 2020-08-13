@@ -3,48 +3,50 @@
 }
 
 .goWrapper {
-  float: left;
-  margin-left: 110px;
+  display: inline-block;
  padding-top: 5px;
-  width: 25%;
+  width: 30%;
+  padding-right: 15px;
 }
 
 .goText {
   border-bottom: 1px solid slateblue;
-<<<<<<< HEAD
+
   border-width: 2px;
-=======
+
   width: 100%;
->>>>>>> b303c9f0a43a0eb3d6aee88cca635648fd52528a
+
 }
 
 .completedWrapper {
-  float: right;
-  margin-right: 110px;
+  display: inline-block;
+  
   padding-top: 5px;
-  width: 25%;
+  width: 30%;
+  padding-left: 15px;
 }
 
 .completedText {
   border-bottom: 1px solid slateblue;
-<<<<<<< HEAD
   border-width: 2px;
-=======
   width: 100%;
->>>>>>> b303c9f0a43a0eb3d6aee88cca635648fd52528a
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   
   .goWrapper {
-    margin-left: 20px;
-   padding-top: 15px;
-    width: 30%;
+    display: inline-block;
+    padding-top: 5px;
+     width: 44%;
+     padding-right:15xpx;
   }
   .completedWrapper {
-    margin-right:25px;
-    padding-top: 15px;
-    width: 30%;
+    display: inline-block;
+  
+    padding-top: 5px;
+    width: 44%;
+    padding-left: 15px;
   }
   
 }

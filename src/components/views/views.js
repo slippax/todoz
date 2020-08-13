@@ -21,14 +21,14 @@ const views = () => {
         <Bounce top>
           <TitleMenu />
           <TodoItem />
-          <div className={classes.goWrapper}>
+          <span className={classes.goWrapper}>
             <h3 className={classes.goText}>ON THE GO</h3>
             <TodoItemList/>
-          </div>
-          <div className={classes.completedWrapper}>
+          </span>
+          <span className={classes.completedWrapper}>
           <h3 className={classes.completedText}>COMPLETED</h3>
           <TodoItemListCompleted/>
-          </div>
+          </span>
         </Bounce>
       </div>
     </MuiThemeProvider>

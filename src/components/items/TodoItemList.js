@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { completedTodo, deleteTodo } from "../../actions";
+import {completeTodo,  deleteTodo } from "../../actions";
 import { useDispatch } from "react-redux";
 import classes from "./TodoItemList.module.css";
 import HeadShake from "react-reveal/HeadShake";
@@ -14,12 +14,12 @@ const TodoItemList = () => {
   const itemList = newData.map((d) => (
     <div>
       <div className={classes.itemBox}>
-        <li onClick={() => dispatch(completedTodo(d.id))} key={d.id}>
+        <li onClick={() => dispatch(completeTodo(d.id))} key={d.id}>
           {d.item}
         </li>
         <button
           className={classes.button1}
-          onClick={() => dispatch(completedTodo(d.id))}
+          onClick={() => dispatch(completeTodo(d.id))}
         >
           <FaCheck />
         </button>
