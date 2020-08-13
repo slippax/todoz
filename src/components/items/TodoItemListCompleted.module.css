@@ -9,14 +9,37 @@
   }
   
   .list li {
-      width: 100%;
-      list-style: square;
-      border-bottom: 1px solid salmon;
-      border-width: 2px;
-      padding-top: 10px;
-   
+    width: 100%;
+    list-style: none;
+    padding-top: 5px;
+    border-bottom: 1px solid salmon;
+    border-width: 2px;
+    padding-bottom: 5px;
+    font-size: 17px;
   }
   
   .list li:hover {
       color: red;
+      text-decoration: line-through;
+  }
+
+  .itemBox {
+    border: 1px solid green;
+      border-width: 2px;
+      padding: 6px;
+      border-radius: 20px;
+  }
+
+  .button2{
+    border: none;
+  background: none;
+  padding-top: 10px;
+  }
+  
+  .button2:hover {
+    color: red
+  }
+
+  .boxApart {
+    padding-bottom: 10px;
   }

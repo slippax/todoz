@@ -4,12 +4,28 @@ import { deleteTodo } from "../../actions";
 import { useDispatch } from "react-redux";
 import classes from "./TodoItemListCompleted.module.css";
 import HeadShake from "react-reveal/HeadShake";
+import { MdDelete } from "react-icons/md";
 
 const TodoItemListCompleted = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.todos);
   const changedData = data.filter((i) => i.completed === true);
-  const itemList = changedData.map((d) => <li onClick={() => dispatch(deleteTodo(d.id))} key={d.id}>{d.item}</li>);
+  const itemList = changedData.map((d) => (
+    <div>
+      <div className={classes.itemBox}>
+        <li onClick={() => dispatch(deleteTodo(d.id))} key={d.id}>
+          {d.item}
+        </li>
+        <button
+          className={classes.button2}
+          onClick={() => dispatch(deleteTodo(d.id))}
+        >
+          <MdDelete />
+        </button>
+      </div>
+      <div className={classes.boxApart}></div>
+    </div>
+  ));
   return (
     <div>
       <HeadShake spy={changedData}>

@@ -11,6 +11,7 @@
 
 .goText {
   border-bottom: 1px solid slateblue;
+  border-width: 2px;
 }
 
 .completedWrapper {
@@ -22,6 +23,7 @@
 
 .completedText {
   border-bottom: 1px solid slateblue;
+  border-width: 2px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
