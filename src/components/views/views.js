@@ -1,40 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import TodoItem from "../items/TodoItem";
 import TodoItemList from "../items/TodoItemList";
 import TodoItemListCompleted from "../items/TodoItemListCompleted";
 import TitleMenu from "./TitleMenu/TitleMenu";
 import ItemCounter from "../items/ItemCounter/ItemCounter";
 import classes from "./views.module.css";
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
-import Bounce from "react-reveal/Fade";
-const views = () => {
-  const theme = createMuiTheme({
-    typography: {
-      button: {
-        fontFamily: "Permanent Marker",
-      },
-    },
-  });
-
+import Bounce from "react-reveal/Zoom";
+import { FaMinusCircle } from "react-icons/fa";
+const Views = () => {
+  const [progress, toggleProgress] = useState(true);
+  const [completed, setCompleted] = useState(true);
   return (
-    <MuiThemeProvider theme={theme}>
-      <div className={classes.pageWrapper}>
-        <TitleMenu />
+    <div className={classes.pageWrapper}>
+      <TitleMenu />
+      <div className={classes.inputBox}>
         <TodoItem />
-        <ItemCounter />
-        <Bounce top cascade>
+        <ItemCounter
+          progressClicked={() => toggleProgress(!progress)}
+          completedClicked={() => setCompleted(!completed)}
+        />
+      </div>
+      <Bounce cascade>
+        {progress ? (
           <span className={classes.goWrapper}>
-            <h3 className={classes.goText}>ON THE GO</h3>
+            <h3 className={classes.goText}>
+              ON THE GO{" "}
+              <button className={classes.minusButton} onClick={()=>toggleProgress(!progress)}>
+                <FaMinusCircle size='1.2em' />
+              </button>
+            </h3>
             <TodoItemList />
           </span>
+        ) : (
+          <div></div>
+        )}
+        {completed ? (
           <span className={classes.completedWrapper}>
-            <h3 className={classes.completedText}>COMPLETED</h3>
+            <h3 className={classes.completedText}>
+              COMPLETED{" "}
+              <button className={classes.minusButton} onClick={()=> setCompleted(!completed)}>
+                <FaMinusCircle size='1.2em' />
+              </button>
+            </h3>
             <TodoItemListCompleted />
           </span>
-        </Bounce>
-      </div>
-    </MuiThemeProvider>
+        ) : (
+          <div></div>
+        )}
+      </Bounce>
+    </div>
   );
 };
 
-export default views;
+export default Views;

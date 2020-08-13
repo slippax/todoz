@@ -6,7 +6,8 @@
   .list ul {
       display: table;
     margin: 0 auto;
-    
+    width: 100%;
+    padding-left: 18px;
   }
   
   .list li {
@@ -25,10 +26,15 @@
   }
 
   .itemBox {
-    border: 1px solid darkolivegreen;
+    border: 1px solid gray;
       border-width: 2px;
       padding: 6px;
       border-radius: 20px;
+      background-color: lightyellow;
+  }
+  
+  .itemBox:hover{
+    background-color: linen;
   }
 
   .button2{

@@ -10,13 +10,23 @@
 }
 
 .goText {
-  border-bottom: 1px solid slateblue;
+  border-bottom: 1px solid lightsalmon;
 
   border-width: 2px;
 
   width: 100%;
 }
 
+.minusButton {
+  border: none;
+  background: none;
+}
+.minusButton:hover {
+color: red;
+}
+.minusButton:focus {
+  outline: none;
+}
 .completedWrapper {
   display: inline-block;
 
@@ -26,7 +36,7 @@
 }
 
 .completedText {
-  border-bottom: 1px solid slateblue;
+  border-bottom: 1px solid lightsalmon;
   border-width: 2px;
   width: 100%;
 }
@@ -51,7 +61,6 @@
     padding-left: 40px;
   }
 }
-
 
 /* 
   ##Device = Laptops, Desktops
@@ -93,8 +102,6 @@
     width: 30%;
     padding-left: 40px;
   }
-  
-  
 }
 
 /* 
@@ -103,8 +110,6 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  
 }
 
 /* 
@@ -116,18 +121,16 @@
   .goWrapper {
     display: inline-block;
     padding-top: 0px;
-    width: 30%;
+    width: 40%;
     padding-right: 30px;
   }
   .completedWrapper {
     display: inline-block;
 
     padding-top: 0px;
-    width: 30%;
+    width: 40%;
     padding-left: 30px;
   }
-  
-  
 }
 
 /* 
@@ -150,19 +153,16 @@
     padding-left: 15px;
   }
 
-  
   .completedText {
-    border-bottom: 1px solid slateblue;
+    border-bottom: 1px solid lightsalmon;
     border-width: 2px;
-    width: 75%;
-    margin-left: 19px;
+    width: 90%;
+    margin-left: 10px;
   }
   .goText {
-    border-bottom: 1px solid slateblue;
-  
+    border-bottom: 1px solid lightsalmon;
     border-width: 2px;
-  margin-left: 22px;
-    width: 75%;
+    margin-left: 10px;
+    width: 90%;
   }
-  
 }

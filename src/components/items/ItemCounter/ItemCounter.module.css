@@ -1,111 +1,149 @@
 .progress {
   margin: 0 auto;
   margin-top: 25px;
-  border: 1px solid orange;
+  border: 2px solid gray;
   width: 30%;
   border-radius: 30px;
+  background-color: lightyellow;
+}
+.progress:hover {
+  background-color: linen;
+}
+
+.progress button {
+  padding-top: 10px;
+  padding-right: 15px;
+  border: none;
+  background: none;
+}
+
+.onGo {
+  text-decoration: line-through;
 }
 
 .onGO strong {
-color: darkred;
+  color: darkred;
 }
 
 .completed {
-    padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
 }
-.completed strong{
-color:darkolivegreen;
+.completed strong {
+  color: darkolivegreen;
 }
 
+.progressButton {
+  padding-left: 14px;
+  text-decoration: none;
+  width: 20%;
+}
+.progressButton:hover {
+  color: green;
+}
 
+.progressButton:focus {
+  outline: none;
+}
+.completedButton {
+  padding-left: 26px;
+  width: 25%;
+}
+.completedButton:hover {
+  color: green;
+}
+.completedButton:focus {
+  outline: none;
+}
 
-  @media (min-width: 1281px) {
-    .progress {
-        margin: 0 auto;
-        margin-top: 20px;
-        border: 1px solid orange;
-        width: 14%;
-        border-radius: 30px;
-      }
+@media (min-width: 1281px) {
+  .progress {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid gray;
+    width: 20%;
+    border-radius: 30px;
+    padding: 10px;
   }
-  
-  
-  /* 
+}
+
+/* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .progress {
-        margin: 0 auto;
-        margin-top: 20px;
-        border: 1px solid orange;
-        width: 15%;
-        border-radius: 30px;
-      }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .progress {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid gray;
+    width: 20%;
+    border-radius: 30px;
+    padding: 10px;
   }
-  
-  /* 
+}
+
+/* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .progress {
-        margin: 0 auto;
-        margin-top: 20px;
-        border: 1px solid orange;
-        width: 20%;
-        border-radius: 30px;
-      }
-    
-    
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .progress {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid gray;
+    width: 30%;
+    border-radius: 30px;
+    padding: 10px;
   }
-  
-  /* 
+}
+
+/* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .progress {
-        margin: 0 auto;
-        margin-top: 20px;
-        border: 1px solid orange;
-        width: 20%;
-        border-radius: 30px;
-      }
-    
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .progress {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid gray;
+    width: 35%;
+    border-radius: 30px;
+    padding: 10px;
   }
-  
-  /* 
+}
+
+/* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
   */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    .progress {
-        margin: 0 auto;
-        margin-top: 20px;
-        border: 1px solid orange;
-        width: 30%;
-        border-radius: 30px;
-      }
-    
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .progress {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid gray;
+    width: 40%;
+    border-radius: 30px;
+    padding: 10px;
   }
-  
-  /* 
+}
+
+/* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    .progress {
-        margin: 0 auto;
-        margin-top: 20px;
-        border: 1px solid orange;
-        width: 40%;
-        border-radius: 30px;
-      }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .progress {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid gray;
+    width: 50%;
+    border-radius: 30px;
+    padding: 8px;
   }
+}

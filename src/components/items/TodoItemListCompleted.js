@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import { deleteTodo, revertTodo } from "../../actions";
 import { useDispatch } from "react-redux";
 import classes from "./TodoItemListCompleted.module.css";
-import HeadShake from "react-reveal/HeadShake";
+import Zoom from "react-reveal/Zoom";
+import Pulse from "react-reveal/Pulse";
 import { FaTrash, FaRedo } from "react-icons/fa";
 
 const TodoItemListCompleted = () => {
@@ -34,11 +35,13 @@ const TodoItemListCompleted = () => {
   ));
   return (
     <div>
-      <HeadShake spy={changedData}>
+      <Zoom>
         <div className={classes.list}>
+          <Pulse spy={changedData}>
           <ul>{itemList}</ul>
+          </Pulse>
         </div>
-      </HeadShake>
+      </Zoom>
     </div>
   );
 };

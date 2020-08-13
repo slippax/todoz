@@ -1,13 +1,22 @@
 .todoButton{
 padding-left: 15px;
-
 }
 
 .todoButton Button {
     font-size: 20px;
     height: 56px;
+    background-color: lightyellow;
+    color: lightsalmon;
 }
 
-.textArea {
- width: 100%;
+.todoButton Button:hover {
+background-color: linen;
+}
+
+
+.textArea Input{
+    background-color: lightyellow;
+}
+.textArea Input:hover{
+    background-color: linen;
 }
