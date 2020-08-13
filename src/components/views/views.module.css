@@ -4,7 +4,7 @@
 
 .goWrapper {
   display: inline-block;
- padding-top: 5px;
+  padding-top: 5px;
   width: 30%;
   padding-right: 15px;
 }
@@ -15,12 +15,11 @@
   border-width: 2px;
 
   width: 100%;
-
 }
 
 .completedWrapper {
   display: inline-block;
-  
+
   padding-top: 5px;
   width: 30%;
   padding-left: 15px;
@@ -30,23 +29,124 @@
   border-bottom: 1px solid slateblue;
   border-width: 2px;
   width: 100%;
-
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
   .goWrapper {
     display: inline-block;
     padding-top: 5px;
-     width: 44%;
-     padding-right:15xpx;
+    width: 20%;
+    padding-right: 40px;
   }
   .completedWrapper {
     display: inline-block;
-  
+
     padding-top: 5px;
+    width: 20%;
+    padding-left: 40px;
+  }
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .goWrapper {
+    display: inline-block;
+    padding-top: 5px;
+    width: 20%;
+    padding-right: 40px;
+  }
+  .completedWrapper {
+    display: inline-block;
+
+    padding-top: 5px;
+    width: 20%;
+    padding-left: 40px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .goWrapper {
+    display: inline-block;
+    padding-top: 5px;
+    width: 30%;
+    padding-right: 40px;
+  }
+  .completedWrapper {
+    display: inline-block;
+
+    padding-top: 5px;
+    width: 30%;
+    padding-left: 40px;
+  }
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .goWrapper {
+    display: inline-block;
+    padding-top: 0px;
+    width: 30%;
+    padding-right: 30px;
+  }
+  .completedWrapper {
+    display: inline-block;
+
+    padding-top: 0px;
+    width: 30%;
+    padding-left: 30px;
+  }
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .goWrapper {
+    display: inline-block;
+    padding-top: 0px;
+    width: 44%;
+    padding-right: 15px;
+  }
+  .completedWrapper {
+    display: inline-block;
+
+    padding-top: 0px;
     width: 44%;
     padding-left: 15px;
   }
-  
 }

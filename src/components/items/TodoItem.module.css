@@ -1,3 +1,13 @@
 .todoButton{
-    padding-top: 20px;
+padding-left: 15px;
+
+}
+
+.todoButton Button {
+    font-size: 20px;
+    height: 56px;
+}
+
+.textArea {
+ width: 100%;
 }

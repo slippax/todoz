@@ -4,29 +4,29 @@ import { deleteTodo, revertTodo } from "../../actions";
 import { useDispatch } from "react-redux";
 import classes from "./TodoItemListCompleted.module.css";
 import HeadShake from "react-reveal/HeadShake";
-import { MdDelete, MdRedo } from "react-icons/md";
+import { FaTrash, FaRedo } from "react-icons/fa";
 
 const TodoItemListCompleted = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.todos);
   const changedData = data.filter((i) => i.completed === true);
   const itemList = changedData.map((d) => (
-    <div>
+    <div key={d.id}>
       <div className={classes.itemBox}>
-        <li onClick={() => dispatch(deleteTodo(d.id))} key={d.id}>
+        <li onClick={() => dispatch(deleteTodo(d.id))}>
           {d.item}
         </li>
         <button
           className={classes.button1}
           onClick={() => dispatch(revertTodo(d.id))}
         >
-          <MdRedo />
+          <FaRedo/>
         </button>
         <button
           className={classes.button2}
           onClick={() => dispatch(deleteTodo(d.id))}
         >
-          <MdDelete />
+          <FaTrash />
         </button>
       </div>
       <div className={classes.boxApart}></div>

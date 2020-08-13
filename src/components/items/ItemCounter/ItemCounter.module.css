@@ -1,0 +1,111 @@
+.progress {
+  margin: 0 auto;
+  margin-top: 25px;
+  border: 1px solid orange;
+  width: 30%;
+  border-radius: 30px;
+}
+
+.onGO strong {
+color: darkred;
+}
+
+.completed {
+    padding-right: 12px;
+}
+.completed strong{
+color:darkolivegreen;
+}
+
+
+
+  @media (min-width: 1281px) {
+    .progress {
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid orange;
+        width: 14%;
+        border-radius: 30px;
+      }
+  }
+  
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .progress {
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid orange;
+        width: 15%;
+        border-radius: 30px;
+      }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .progress {
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid orange;
+        width: 20%;
+        border-radius: 30px;
+      }
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .progress {
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid orange;
+        width: 20%;
+        border-radius: 30px;
+      }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .progress {
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid orange;
+        width: 30%;
+        border-radius: 30px;
+      }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .progress {
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid orange;
+        width: 40%;
+        border-radius: 30px;
+      }
+  }
