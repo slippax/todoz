@@ -11,7 +11,11 @@
 
 .goText {
   border-bottom: 1px solid slateblue;
+<<<<<<< HEAD
   border-width: 2px;
+=======
+  width: 100%;
+>>>>>>> b303c9f0a43a0eb3d6aee88cca635648fd52528a
 }
 
 .completedWrapper {
@@ -23,13 +27,17 @@
 
 .completedText {
   border-bottom: 1px solid slateblue;
+<<<<<<< HEAD
   border-width: 2px;
+=======
+  width: 100%;
+>>>>>>> b303c9f0a43a0eb3d6aee88cca635648fd52528a
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   
   .goWrapper {
-    margin-left: 25px;
+    margin-left: 20px;
    padding-top: 15px;
     width: 30%;
   }
