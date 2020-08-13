@@ -5,7 +5,7 @@ import TodoItemListCompleted from "../items/TodoItemListCompleted";
 import TitleMenu from "./TitleMenu/TitleMenu";
 import ItemCounter from "../items/ItemCounter/ItemCounter";
 import classes from "./views.module.css";
-import Bounce from "react-reveal/Zoom";
+import Bounce from "react-reveal/Flip";
 import { FaMinusCircle } from "react-icons/fa";
 const Views = () => {
   const [progress, toggleProgress] = useState(true);
@@ -20,7 +20,7 @@ const Views = () => {
           completedClicked={() => setCompleted(!completed)}
         />
       </div>
-      <Bounce cascade>
+      <Bounce top cascade>
         {progress ? (
           <span className={classes.goWrapper}>
             <h3 className={classes.goText}><button className={classes.minusButton} onClick={()=>toggleProgress(!progress)}>

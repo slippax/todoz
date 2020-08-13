@@ -143,26 +143,26 @@ color: red;
     display: inline-block;
     padding-top: 0px;
     width: 46%;
-    padding-right: 15px;
+    padding-right: 10px;
   }
   .completedWrapper {
     display: inline-block;
 
     padding-top: 0px;
     width: 46%;
-    padding-left: 15px;
+    padding-left: 10px;
   }
 
   .completedText {
     border-bottom: 1px solid lightsalmon;
     border-width: 2px;
-    width: 92%;
-    margin-left: 5px;
+    width: 95%;
+    margin-left: 0px;
   }
   .goText {
     border-bottom: 1px solid lightsalmon;
     border-width: 2px;
-    margin-left: 5px;
-    width: 92%;
+    margin-left: 0px;
+    width: 95%;
   }
 }
