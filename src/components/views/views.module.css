@@ -156,13 +156,13 @@ color: red;
   .completedText {
     border-bottom: 1px solid lightsalmon;
     border-width: 2px;
-    width: 90%;
-    margin-left: 10px;
+    width: 92%;
+    margin-left: 5px;
   }
   .goText {
     border-bottom: 1px solid lightsalmon;
     border-width: 2px;
-    margin-left: 10px;
-    width: 90%;
+    margin-left: 5px;
+    width: 92%;
   }
 }

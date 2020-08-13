@@ -23,11 +23,10 @@ const Views = () => {
       <Bounce cascade>
         {progress ? (
           <span className={classes.goWrapper}>
-            <h3 className={classes.goText}>
-              ON THE GO{" "}
-              <button className={classes.minusButton} onClick={()=>toggleProgress(!progress)}>
+            <h3 className={classes.goText}><button className={classes.minusButton} onClick={()=>toggleProgress(!progress)}>
                 <FaMinusCircle size='1.2em' />
               </button>
+              ON THE GO{" "}
             </h3>
             <TodoItemList />
           </span>
@@ -36,11 +35,10 @@ const Views = () => {
         )}
         {completed ? (
           <span className={classes.completedWrapper}>
-            <h3 className={classes.completedText}>
-              COMPLETED{" "}
-              <button className={classes.minusButton} onClick={()=> setCompleted(!completed)}>
+            <h3 className={classes.completedText}><button className={classes.minusButton} onClick={()=> setCompleted(!completed)}>
                 <FaMinusCircle size='1.2em' />
               </button>
+              COMPLETED{" "}
             </h3>
             <TodoItemListCompleted />
           </span>
