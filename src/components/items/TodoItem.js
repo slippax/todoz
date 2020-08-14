@@ -5,7 +5,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import classes from "./TodoItem.module.css";
 import { FaPlus } from "react-icons/fa";
-import Flip from 'react-reveal/Flip';
+import Zoom from 'react-reveal/Zoom';
 const TodoItem = () => {
   const dispatch = useDispatch();
   let todoItem = [];
@@ -24,7 +24,7 @@ const TodoItem = () => {
   };
   return (
     <div className={classes.form}>
-      <Flip top>
+      <Zoom>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -47,7 +47,7 @@ const TodoItem = () => {
             </Button>
           </span>
         </form>
-      </Flip>
+      </Zoom>
     </div>
   );
 };

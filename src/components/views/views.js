@@ -5,7 +5,8 @@ import TodoItemListCompleted from "../items/TodoItemListCompleted";
 import TitleMenu from "./TitleMenu/TitleMenu";
 import ItemCounter from "../items/ItemCounter/ItemCounter";
 import classes from "./views.module.css";
-import Bounce from "react-reveal/Flip";
+import Bounce from "react-reveal/Zoom";
+import Zoom from "react-reveal/Fade";
 import { FaMinusCircle } from "react-icons/fa";
 import { FaInfoCircle } from "react-icons/fa"
 const Views = () => {
@@ -17,7 +18,7 @@ const Views = () => {
       <TitleMenu />
       <div className={classes.inputBox}>
         <TodoItem />
-        <Bounce bottom opposite when={statusBox}>
+        <Bounce top opposite when={statusBox}>
           {statusBox ? (
             <div>
               <ItemCounter
@@ -30,23 +31,25 @@ const Views = () => {
             <div></div>
           )}
         </Bounce>
-        <Bounce bottom opposite when={!statusBox}>
+        <Bounce top opposite when={!statusBox}>
         {!statusBox ? (
           <button
             className={classes.plusStatusButton}
             onClick={() => setStatusBox(!statusBox)}
-          >
-            <FaInfoCircle size="2em" />
+          ><Zoom>
+            <FaInfoCircle size="2.5em" /></Zoom>
           </button>
         ) : (
           <div></div>
         )}
         </Bounce>
       </div>
-      <Bounce bottom opposite when={progress}>
+      <Bounce top opposite when={progress}>
         {progress ? (
           <span className={classes.goWrapper}>
+            <Bounce>
             <h3 className={classes.goText}>
+              
               <button
                 className={classes.minusButton}
                 onClick={() => toggleProgress(!progress)}
@@ -54,16 +57,19 @@ const Views = () => {
                 <FaMinusCircle size="1.2em" />
               </button>{" "}
               ON THE GO
+              
             </h3>
             <TodoItemList />
+            </Bounce>
           </span>
         ) : (
           <div></div>
         )}
       </Bounce>
-      <Bounce bottom opposite when={completed}>
+      <Bounce top opposite when={completed}>
         {completed ? (
           <span className={classes.completedWrapper}>
+            <Bounce>
             <h3 className={classes.completedText}>
               <button
                 className={classes.minusButton}
@@ -74,6 +80,7 @@ const Views = () => {
               COMPLETED
             </h3>
             <TodoItemListCompleted />
+            </Bounce>
           </span>
         ) : (
           <div></div>

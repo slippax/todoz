@@ -4,7 +4,7 @@ import { deleteProgress, deleteCompleted } from "../../../actions/index";
 import { useDispatch } from "react-redux";
 import classes from "./ItemCounter.module.css";
 import Flash from "react-reveal/Flash";
-import Flip from "react-reveal/Flip";
+import Flip from "react-reveal/Zoom";
 import { FaRegEye } from "react-icons/fa";
 import { FiTrash2 } from "react-icons/fi";
 import { FaMinusCircle } from "react-icons/fa";
@@ -16,7 +16,7 @@ const ItemCounter = (props) => {
   const onGoCount = onGoData.length;
   const completedCount = completedData.length;
   return (
-    <Flip top>
+    <Flip>
       <div className={classes.progress}>
         <span className={classes.onGO}>
         <button
