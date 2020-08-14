@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./TitleMenu.module.css";
-import Bounce from "react-reveal/Roll";
+import Bounce from "react-reveal/Fade";
 const TitleMenu = () => {
   return (
     <div className={classes.titleText}>

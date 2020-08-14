@@ -13,19 +13,23 @@ const ItemCounter = (props) => {
   return (
     <Bounce top>
       <div className={classes.progress}>
-        <div className={classes.onGO}>
+        <span className={classes.onGO}>
           <Flash spy={onGoCount}></Flash>
+          IN PROGRESS: <strong>{onGoCount}</strong>
+        </span>
+        <div>
           <button className={classes.progressButton}>
             <FaRegEye size="1.5em" onClick={props.progressClicked} />
           </button>
-          IN PROGRESS: <strong>{onGoCount}</strong>
         </div>
-        <div className={classes.completed}>
-          <Flash spy={completedCount}></Flash><button className={classes.completedButton}>
+        <span className={classes.completed}>
+          <Flash spy={completedCount}></Flash>
+          COMPLETED: <strong>{completedCount}</strong>
+        </span>
+        <div>
+          <button className={classes.completedButton}>
             <FaRegEye size="1.5em" onClick={props.completedClicked} />
           </button>
-          COMPLETED: <strong>{completedCount}</strong>
-          
         </div>
       </div>
     </Bounce>

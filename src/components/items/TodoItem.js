@@ -8,11 +8,17 @@ import { FaPlus } from "react-icons/fa";
 import Bounce from "react-reveal/Fade";
 const TodoItem = () => {
   const dispatch = useDispatch();
-
+  let todoItem = [];
+  let todoLast = [];
   const itemAddHandler = (item) => {
+    if (item === "") {
+      return;
+    } else if (item === todoLast) {
+      return;
+    }
+    todoLast = item;
     dispatch(addTodo(item));
   };
-  let todoItem = [];
   return (
     <div className={classes.form}>
       <Bounce top>

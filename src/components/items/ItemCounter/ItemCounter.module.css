@@ -11,8 +11,7 @@
 }
 
 .progress button {
-  padding-top: 10px;
-  padding-right: 15px;
+  padding: 1px;
   border: none;
   background: none;
 }
@@ -25,19 +24,14 @@
   color: darkred;
 }
 
-.completed {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 0px;
-}
 .completed strong {
   color: darkolivegreen;
 }
 
 .progressButton {
-  padding-left: 5px;
+  padding-left: 0px;
   text-decoration: none;
-  width: 20%;
+  width: 25%;
 }
 .progressButton:hover {
   color: green;
@@ -64,7 +58,7 @@
     border: 2px solid gray;
     width: 20%;
     border-radius: 30px;
-    padding: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -80,7 +74,7 @@
     border: 2px solid gray;
     width: 20%;
     border-radius: 30px;
-    padding: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -96,7 +90,7 @@
     border: 2px solid gray;
     width: 30%;
     border-radius: 30px;
-    padding: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -112,7 +106,7 @@
     border: 2px solid gray;
     width: 35%;
     border-radius: 30px;
-    padding: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -127,8 +121,8 @@
     margin-top: 20px;
     border: 2px solid gray;
     width: 40%;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 20px;
+    padding-top: 5px;
   }
 }
 
@@ -144,6 +138,6 @@
     border: 2px solid gray;
     width: 50%;
     border-radius: 30px;
-    padding: 8px;
+    padding-top: 5px;
   }
 }

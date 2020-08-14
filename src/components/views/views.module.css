@@ -4,7 +4,7 @@
 
 .goWrapper {
   display: inline-block;
-  padding-top: 5px;
+  padding-top: 0px;
   width: 30%;
   padding-right: 15px;
 }
@@ -30,7 +30,7 @@ color: red;
 .completedWrapper {
   display: inline-block;
 
-  padding-top: 5px;
+  padding-top: 0px;
   width: 30%;
   padding-left: 15px;
 }

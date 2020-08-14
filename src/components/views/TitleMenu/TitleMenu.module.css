@@ -1,9 +1,11 @@
 .titleText {
-    color: lightsalmon;
-    font-size: 20px;
+  color: lightsalmon;
+  font-size: 20px;
+  margin-top: -25px;
 }
 
 .descriptionText {
-    color: black;
-    font-size: 20px;
+  color: black;
+  font-size: 20px;
+  margin-top: -20px;
 }

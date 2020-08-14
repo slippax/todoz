@@ -20,3 +20,8 @@ background-color: linen;
 .textArea Input:hover{
     background-color: linen;
 }
+
+.form {
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
