@@ -20,6 +20,10 @@ const todoReducer = (state = [], action) => {
       return state.map((item) =>
         item.id === action.id ? { ...item, completed: !item.completed } : item
       );
+    case "DELETE_PROGRESS":
+      return state.filter(({ ...item }) => item.completed === true);
+    case "DELETE_COMPLETED":
+      return state.filter(({ ...item }) => item.completed === false);
     default:
       return state;
   }

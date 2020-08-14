@@ -1,13 +1,13 @@
 import React from "react";
 import classes from "./TitleMenu.module.css";
-import Bounce from "react-reveal/Fade";
+import Flip from 'react-reveal/Flip';
 const TitleMenu = () => {
   return (
     <div className={classes.titleText}>
-      <Bounce top cascade>
+      <Flip cascade>
         <h1>Todoz</h1>
         <p className={classes.descriptionText}>Add a todo below to begin</p>
-      </Bounce>
+      </Flip>
     </div>
   );
 };

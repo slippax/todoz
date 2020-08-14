@@ -27,3 +27,15 @@ export const revertTodo = (id) => {
     id
   };
 };
+
+export const deleteProgress = () => {
+  return{
+    type: "DELETE_PROGRESS",
+  }
+}
+
+export const deleteCompleted = () => {
+  return{
+    type: "DELETE_COMPLETED",
+  }
+}

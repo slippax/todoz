@@ -5,15 +5,18 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import classes from "./TodoItem.module.css";
 import { FaPlus } from "react-icons/fa";
-import Bounce from "react-reveal/Fade";
+import Flip from 'react-reveal/Flip';
 const TodoItem = () => {
   const dispatch = useDispatch();
   let todoItem = [];
   let todoLast = [];
   const itemAddHandler = (item) => {
-    if (item === "") {
+    console.log(item);
+    if (item.length === 0) {
       return;
     } else if (item === todoLast) {
+      return;
+    } else if (!item.trim()) {
       return;
     }
     todoLast = item;
@@ -21,7 +24,7 @@ const TodoItem = () => {
   };
   return (
     <div className={classes.form}>
-      <Bounce top>
+      <Flip top>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -44,7 +47,7 @@ const TodoItem = () => {
             </Button>
           </span>
         </form>
-      </Bounce>
+      </Flip>
     </div>
   );
 };

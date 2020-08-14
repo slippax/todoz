@@ -1,25 +1,35 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { deleteProgress, deleteCompleted } from "../../../actions/index";
+import { useDispatch } from "react-redux";
 import classes from "./ItemCounter.module.css";
 import Flash from "react-reveal/Flash";
-import Bounce from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
 import { FaRegEye } from "react-icons/fa";
+import { FiTrash2 } from "react-icons/fi";
 const ItemCounter = (props) => {
+  const dispatch = useDispatch();
   const data = useSelector((state) => state.todos);
   const onGoData = data.filter((i) => i.completed === false);
   const completedData = data.filter((i) => i.completed === true);
   const onGoCount = onGoData.length;
   const completedCount = completedData.length;
   return (
-    <Bounce top>
+    <Flip top>
       <div className={classes.progress}>
         <span className={classes.onGO}>
           <Flash spy={onGoCount}></Flash>
           IN PROGRESS: <strong>{onGoCount}</strong>
         </span>
         <div>
-          <button className={classes.progressButton}>
-            <FaRegEye size="1.5em" onClick={props.progressClicked} />
+          <button
+            className={classes.progressButton}
+            onClick={props.progressClicked}
+          >
+            <FaRegEye size="2em" />
+          </button>
+          <button className={classes.progressDeleteButton} onClick={() => { if (window.confirm('Are you sure you wish to delete all in progress items?')) dispatch(deleteProgress()) } }>
+            <FiTrash2 size="2em" />
           </button>
         </div>
         <span className={classes.completed}>
@@ -27,12 +37,18 @@ const ItemCounter = (props) => {
           COMPLETED: <strong>{completedCount}</strong>
         </span>
         <div>
-          <button className={classes.completedButton}>
-            <FaRegEye size="1.5em" onClick={props.completedClicked} />
+          <button
+            className={classes.completedButton}
+            onClick={props.completedClicked}
+          >
+            <FaRegEye size="2em" />
+          </button>
+          <button className={classes.completedDeleteButton} onClick={() => { if (window.confirm('Are you sure you wish to delete all completed items?')) dispatch(deleteCompleted()) } }>
+            <FiTrash2 size="2em" />
           </button>
         </div>
       </div>
-    </Bounce>
+    </Flip>
   );
 };
 
