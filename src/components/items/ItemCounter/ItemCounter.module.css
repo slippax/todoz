@@ -79,6 +79,17 @@
   outline: none;
 }
 
+.minusStatusButton {
+  margin-top: 4px;
+  margin-bottom: -5px;
+  margin-left: 10px;
+  margin-right: -10px;
+  float: left;
+}
+.minusStatusButton:focus {
+  outline: none;
+}
+
 @media (min-width: 1281px) {
   .progress {
     margin: 0 auto;

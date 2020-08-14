@@ -7,20 +7,43 @@ import ItemCounter from "../items/ItemCounter/ItemCounter";
 import classes from "./views.module.css";
 import Bounce from "react-reveal/Flip";
 import { FaMinusCircle } from "react-icons/fa";
+import { FaInfoCircle } from "react-icons/fa"
 const Views = () => {
   const [progress, toggleProgress] = useState(true);
   const [completed, setCompleted] = useState(true);
+  const [statusBox, setStatusBox] = useState(true);
   return (
     <div className={classes.pageWrapper}>
       <TitleMenu />
       <div className={classes.inputBox}>
         <TodoItem />
-        <ItemCounter
-          progressClicked={() => toggleProgress(!progress)}
-          completedClicked={() => setCompleted(!completed)}
-        />
+        <Bounce bottom opposite when={statusBox}>
+          {statusBox ? (
+            <div>
+              <ItemCounter
+                minusStatusClicked={() => setStatusBox(!statusBox)}
+                progressClicked={() => toggleProgress(!progress)}
+                completedClicked={() => setCompleted(!completed)}
+              />
+            </div>
+          ) : (
+            <div></div>
+          )}
+        </Bounce>
+        <Bounce bottom opposite when={!statusBox}>
+        {!statusBox ? (
+          <button
+            className={classes.plusStatusButton}
+            onClick={() => setStatusBox(!statusBox)}
+          >
+            <FaInfoCircle size="2em" />
+          </button>
+        ) : (
+          <div></div>
+        )}
+        </Bounce>
       </div>
-      <Bounce top opposite when={progress}>
+      <Bounce bottom opposite when={progress}>
         {progress ? (
           <span className={classes.goWrapper}>
             <h3 className={classes.goText}>
@@ -29,8 +52,8 @@ const Views = () => {
                 onClick={() => toggleProgress(!progress)}
               >
                 <FaMinusCircle size="1.2em" />
-              </button>
-              ON THE GO{" "}
+              </button>{" "}
+              ON THE GO
             </h3>
             <TodoItemList />
           </span>
@@ -38,7 +61,7 @@ const Views = () => {
           <div></div>
         )}
       </Bounce>
-      <Bounce top opposite when={completed}>
+      <Bounce bottom opposite when={completed}>
         {completed ? (
           <span className={classes.completedWrapper}>
             <h3 className={classes.completedText}>
@@ -47,8 +70,8 @@ const Views = () => {
                 onClick={() => setCompleted(!completed)}
               >
                 <FaMinusCircle size="1.2em" />
-              </button>
-              COMPLETED{" "}
+              </button>{" "}
+              COMPLETED
             </h3>
             <TodoItemListCompleted />
           </span>

@@ -4,7 +4,7 @@ import { deleteTodo, revertTodo } from "../../actions";
 import { useDispatch } from "react-redux";
 import classes from "./TodoItemListCompleted.module.css";
 import Zoom from "react-reveal/Flip";
-import Roll from "react-reveal/Fade";
+import Roll from "react-reveal/LightSpeed";
 import Pulse from "react-reveal/Pulse";
 import { FaTrash, FaRedo } from "react-icons/fa";
 
@@ -14,7 +14,7 @@ const TodoItemListCompleted = () => {
   const changedData = data.filter((i) => i.completed === true);
   const itemList = changedData.map((d) => (
     <div key={d.id}>
-      <Roll bottom>
+      <Roll left>
       <div className={classes.itemBox}>
         <li onClick={() => dispatch(deleteTodo(d.id))}>
           {d.item}

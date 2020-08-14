@@ -6,7 +6,7 @@ import classes from "./TodoItemList.module.css";
 import Zoom from "react-reveal/Flip";
 import Pulse from "react-reveal/Pulse";
 import { FaCheck, FaTrash} from "react-icons/fa";
-import Rotate from 'react-reveal/Fade';
+import Rotate from 'react-reveal/LightSpeed';
 const TodoItemList = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.todos);
@@ -14,7 +14,7 @@ const TodoItemList = () => {
   
   const itemList = newData.map((d) => (
     <div key={d.id}>
-      <Rotate bottom>
+      <Rotate right>
       <div className={classes.itemBox}>
         <li onClick={() => dispatch(completeTodo(d.id))}>
           {d.item}

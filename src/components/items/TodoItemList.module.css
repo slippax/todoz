@@ -49,6 +49,9 @@ background: none;
 .button1:hover {
   color: green;
 }
+.button1:focus {
+  outline: none;
+}
 
 .button2{
   border: none;
@@ -57,6 +60,10 @@ background: none;
 
 .button2:hover {
   color: red
+}
+
+.button2:focus {
+  outline:none;
 }
 
 .boxApart {

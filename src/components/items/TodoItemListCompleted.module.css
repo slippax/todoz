@@ -54,11 +54,17 @@
   .button1:hover {
     color: green;
   }
+  .button1:focus {
+    outline:none;
+  }
 
   .button2:hover {
     color: red
   }
 
+  .button2:focus {
+    outline:none;
+  }
   .boxApart {
     padding-bottom: 10px;
   }

@@ -7,6 +7,7 @@ import Flash from "react-reveal/Flash";
 import Flip from "react-reveal/Flip";
 import { FaRegEye } from "react-icons/fa";
 import { FiTrash2 } from "react-icons/fi";
+import { FaMinusCircle } from "react-icons/fa";
 const ItemCounter = (props) => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.todos);
@@ -18,6 +19,12 @@ const ItemCounter = (props) => {
     <Flip top>
       <div className={classes.progress}>
         <span className={classes.onGO}>
+        <button
+        className={classes.minusStatusButton}
+        onClick={props.minusStatusClicked}
+      >
+        <FaMinusCircle size="1.2em" />
+      </button>
           <Flash spy={onGoCount}></Flash>
           IN PROGRESS: <strong>{onGoCount}</strong>
         </span>
