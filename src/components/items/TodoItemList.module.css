@@ -31,10 +31,17 @@
     padding: 6px;
     border-radius: 20px;
     background-color: lightyellow;
+    -webkit-box-shadow: 1px 0px 12px -3px rgba(190,164,32,1);
+-moz-box-shadow: 1px 0px 12px -3px rgba(190,164,32,1);
+box-shadow: 1px 0px 12px -3px rgba(190,164,32,1);
 }
 
 .itemBox:hover{
   background-color: linen;
+  background-color: linen;
+  -webkit-box-shadow: 1px 0px 32px 0px rgba(189,163,32,1);
+  -moz-box-shadow: 1px 0px 32px 0px rgba(189,163,32,1);
+  box-shadow: 1px 0px 32px 0px rgba(189,163,32,1)
 }
 
 

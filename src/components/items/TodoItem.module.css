@@ -11,6 +11,9 @@ padding-left: 15px;
 
 .todoButton Button:hover {
 background-color: linen;
+-webkit-box-shadow: 1px 0px 32px 0px rgba(189,163,32,1);
+-moz-box-shadow: 1px 0px 32px 0px rgba(189,163,32,1);
+box-shadow: 1px 0px 32px 0px rgba(189,163,32,1)
 }
 
 
@@ -19,6 +22,9 @@ background-color: linen;
 }
 .textArea Input:hover{
     background-color: linen;
+    -webkit-box-shadow: 1px 0px 32px 0px rgba(189,163,32,1);
+  -moz-box-shadow: 1px 0px 32px 0px rgba(189,163,32,1);
+  box-shadow: 1px 0px 32px 0px rgba(189,163,32,1)
 }
 
 .form {

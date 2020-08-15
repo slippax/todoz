@@ -5,9 +5,17 @@
   width: 30%;
   border-radius: 30px;
   background-color: lightyellow;
+  -webkit-box-shadow: 1px 0px 12px -3px rgba(190,164,32,1);
+-moz-box-shadow: 1px 0px 12px -3px rgba(190,164,32,1);
+box-shadow: 1px 0px 12px -3px rgba(190,164,32,1);
+  
 }
 .progress:hover {
   background-color: linen;
+  -webkit-box-shadow: 1px 0px 32px 0px rgba(189,163,32,1);
+  -moz-box-shadow: 1px 0px 32px 0px rgba(189,163,32,1);
+  box-shadow: 1px 0px 32px 0px rgba(189,163,32,1)
+
 }
 
 .progress button {
@@ -85,6 +93,10 @@
   margin-left: 10px;
   margin-right: -10px;
   float: left;
+}
+
+.minusStatusButton:hover {
+  color:red;
 }
 .minusStatusButton:focus {
   outline: none;
