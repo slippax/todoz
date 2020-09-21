@@ -1,5 +1,14 @@
 .pageWrapper {
   text-align: center;
+  border: 1px solid #b8b2a5;
+  margin: auto;
+  width: 900px;
+  margin-top: 30px;
+  border-radius: 8px;
+  background: #e9d4953f;
+  -webkit-box-shadow: 4px 4px 5px 5px rgba(179,157,69,1);
+-moz-box-shadow: 4px 4px 5px 5px rgba(179,157,69,1);
+box-shadow: 4px 4px 5px 5px rgba(179,157,69,1);
 }
 
 .goWrapper {
@@ -94,6 +103,9 @@ color: red;
     width: 20%;
     padding-left: 40px;
   }
+  .pageWrapper{
+    width: 850px;
+  }
 }
 
 /* 
@@ -114,6 +126,9 @@ color: red;
     padding-top: 5px;
     width: 30%;
     padding-left: 40px;
+  }
+  .pageWrapper{
+    width: 700px;
   }
 }
 
@@ -143,6 +158,9 @@ color: red;
     padding-top: 0px;
     width: 40%;
     padding-left: 30px;
+  }
+  .pageWrapper{
+    width: 510px;
   }
 }
 
@@ -183,5 +201,11 @@ color: red;
     background: none;
     padding-right: 10px;
     padding-left: 5px;
+  }
+  .pageWrapper{
+    width: 375px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
   }
 }
