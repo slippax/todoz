@@ -5,7 +5,7 @@
   width: 900px;
   margin-top: 30px;
   border-radius: 8px;
-  background: #e9d4953f;
+  background: #e6dc9f;
   -webkit-box-shadow: 4px 4px 5px 5px rgba(179,157,69,1);
 -moz-box-shadow: 4px 4px 5px 5px rgba(179,157,69,1);
 box-shadow: 4px 4px 5px 5px rgba(179,157,69,1);
@@ -82,6 +82,9 @@ color: red;
     width: 20%;
     padding-left: 40px;
   }
+  .pageWrapper{
+    height: 800px;
+  }
 }
 
 /* 
@@ -105,6 +108,7 @@ color: red;
   }
   .pageWrapper{
     width: 850px;
+    height: 700px;
   }
 }
 
@@ -129,6 +133,7 @@ color: red;
   }
   .pageWrapper{
     width: 700px;
+    height: 700px;
   }
 }
 
@@ -161,6 +166,7 @@ color: red;
   }
   .pageWrapper{
     width: 510px;
+    height: 700px;
   }
 }
 
